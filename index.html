@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetShoes Clone</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">NetShoes Clone</a>
+        <form class="d-flex mx-auto" action="busca.html">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="O que você está procurando?"
+            aria-label="Search"
+          />
+          <button class="btn btn-light" type="submit">Buscar</button>
+        </form>
+        <div class="d-flex">
+          <a class="btn btn-outline-light me-2" href="#">Lista de Desejos</a>
+          <a class="btn btn-outline-light me-2" href="#">Entrar</a>
+          <a class="btn btn-light position-relative" href="carrinho.html">
+            🛒
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              id="carrinho-contador"
+              >0</span
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselBanners" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="static/uploads/banner1.jpg"
+            class="d-block"
+            alt="Promoção de Inverno"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="static/uploads/banner2.jpg"
+            class="d-block"
+            alt="Frete Grátis"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="static/uploads/banner3.jpg"
+            class="d-block"
+            alt="Novidades"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="categoria-menu py-2 text-center">
+      <a href="index.html">Todas</a>
+      <a href="categoria.html">Corrida</a>
+      <a href="categoria.html">Futebol</a>
+      <a href="categoria.html">Sportstyle</a>
+      <a href="categoria.html">Feminino</a>
+      <a href="categoria.html">Bem-estar</a>
+      <a href="categoria.html">Cupons</a>
+      <a href="categoria.html">Lojas</a>
+    </div>
+
+    <!-- PRODUTOS -->
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Produto 1 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card produto-card h-100 border-0 shadow">
+            <img
+              src="static/uploads/tenis1.jpg"
+              class="card-img-top"
+              alt="Tênis Esportivo"
+            />
+            <div class="card-body text-center">
+              <h6 class="card-title">Tênis Esportivo</h6>
+              <p class="card-text text-success">R$ 199,90</p>
+              <button
+                class="btn btn-sm btn-success w-100"
+                onclick="adicionarAoCarrinho('Tênis Esportivo', 199.90)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card produto-card h-100 border-0 shadow">
+            <img
+              src="static/uploads/tenis-corrida.jpg"
+              class="card-img-top"
+              alt="Tênis de Corrida"
+            />
+            <div class="card-body text-center">
+              <h6 class="card-title">Tênis de Corrida</h6>
+              <p class="card-text text-success">R$ 229,90</p>
+              <button
+                class="btn btn-sm btn-success w-100"
+                onclick="adicionarAoCarrinho('Tênis de Corrida', 229.90)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card produto-card h-100 border-0 shadow">
+            <img
+              src="static/uploads/roupa.jpg"
+              class="card-img-top"
+              alt="Camisa Dry Fit"
+            />
+            <div class="card-body text-center">
+              <h6 class="card-title">Camisa Dry Fit</h6>
+              <p class="card-text text-success">R$ 89,90</p>
+              <button
+                class="btn btn-sm btn-success w-100"
+                onclick="adicionarAoCarrinho('Camisa Dry Fit', 89.90)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card produto-card h-100 border-0 shadow">
+            <img
+              src="static/uploads/shorts.jpg"
+              class="card-img-top"
+              alt="Shorts Esportivo"
+            />
+            <div class="card-body text-center">
+              <h6 class="card-title">Shorts Esportivo</h6>
+              <p class="card-text text-success">R$ 79,90</p>
+              <button
+                class="btn btn-sm btn-success w-100"
+                onclick="adicionarAoCarrinho('Shorts Esportivo', 79.90)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card produto-card h-100 border-0 shadow">
+            <img
+              src="static/uploads/mochila.jpg"
+              class="card-img-top"
+              alt="Mochila Fitness"
+            />
+            <div class="card-body text-center">
+              <h6 class="card-title">Mochila Fitness</h6>
+              <p class="card-text text-success">R$ 119,90</p>
+              <button
+                class="btn btn-sm btn-success w-100"
+                onclick="adicionarAoCarrinho('Mochila Fitness', 119.90)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card produto-card h-100 border-0 shadow">
+            <img
+              src="static/uploads/jaqueta.jpg"
+              class="card-img-top"
+              alt="Jaqueta Corta Vento"
+            />
+            <div class="card-body text-center">
+              <h6 class="card-title">Jaqueta Corta Vento</h6>
+              <p class="card-text text-success">R$ 179,90</p>
+              <button
+                class="btn btn-sm btn-success w-100"
+                onclick="adicionarAoCarrinho('Jaqueta Corta Vento', 179.90)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-4 text-center mt-5">
+      <div class="container">
+        <small>© 2025 NetShoes Clone — Todos os direitos reservados.</small>
+      </div>
+    </footer>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/carrinho.js"></script>
+  </body>
+</html>

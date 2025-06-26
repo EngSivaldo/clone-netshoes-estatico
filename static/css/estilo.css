@@ -1,0 +1,56 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  background-color: #7200c7;
+}
+
+.navbar .navbar-brand,
+.navbar .btn,
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.categoria-menu {
+  background-color: #ffffff;
+  border-top: 2px solid #e1e1e1;
+}
+
+.categoria-menu a {
+  font-weight: bold;
+  color: #7200c7;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.categoria-menu a:hover {
+  text-decoration: underline;
+}
+
+.produto-card img {
+  height: 200px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.produto-card .card-title {
+  font-size: 1rem;
+}
+
+.produto-card .card-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.carousel-inner img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+footer {
+  background-color: #7200c7;
+  color: white;
+}
