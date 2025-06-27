@@ -1,0 +1,21 @@
+{
+  "name": "NetShoes Clone",
+  "short_name": "NetShoes",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6c63ff",
+  "description": "Loja esportiva clone com layout responsivo, carrinho funcional e categorias.",
+  "icons": [
+    {
+      "src": "static/uploads/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "static/uploads/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

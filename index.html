@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#6c63ff" />
+
+    <!-- Ícones -->
+    <link rel="icon" type="image/png" href="static/uploads/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="static/uploads/icon-192.png"
+    />
+
+    <!-- SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NetShoes Clone</title>
+    <title>NetShoes Clone - Loja de Tênis e Acessórios Esportivos</title>
+    <meta
+      name="description"
+      content="Clone da NetShoes com layout responsivo, carrinho funcional e categorias. Projeto em HTML, CSS, JS e Bootstrap."
+    />
+    <meta
+      name="keywords"
+      content="NetShoes, loja virtual, clone, e-commerce, HTML, CSS, JavaScript, Bootstrap"
+    />
+    <meta name="author" content="EngSivaldo" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="NetShoes Clone - Loja Esportiva Responsiva"
+    />
+    <meta
+      property="og:description"
+      content="Projeto estático em HTML/CSS/JS com carrinho, categorias e layout moderno."
+    />
+    <meta
+      property="og:image"
+      content="https://EngSivaldo.github.io/clone-netshoes-estatico/static/uploads/banner1.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://EngSivaldo.github.io/clone-netshoes-estatico/"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="static/css/estilo.css" />
     <link
@@ -11,6 +57,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <nav
       class="navbar navbar-expand-lg shadow-sm"
@@ -43,7 +90,7 @@
               placeholder="O que você está procurando?"
               aria-label="Search"
             />
-            <button class="btn btn-light" type="submit">Buscar</button>
+            <button class="btn btn-success" type="submit">Buscar</button>
           </form>
 
           <div class="d-flex flex-column flex-lg-row align-items-center">
